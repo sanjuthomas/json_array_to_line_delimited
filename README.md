@@ -13,9 +13,9 @@ input file format -
 
 [
 
-  {"id" : "1", "name" : "sanju"}, 
+    {"id" : "1", "name" : "sanju"}, 
   
-  {"id" : "2", "name" : "thomas"}
+    {"id" : "2", "name" : "thomas"}
   
 ]
  
