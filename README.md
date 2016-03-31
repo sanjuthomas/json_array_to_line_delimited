@@ -4,7 +4,7 @@ A simple utity to convert an array of JSON objects into line delimited jsons. Wh
 
 Usage : 
 
-org.sanju.util.JsonArrayToLineDelimited "input file name argument" "output file name argument"
+*org.sanju.util.JsonArrayToLineDelimited "input file name argument" "output file name argument"*
 
 argument 1 - json array file
 argument 2 - the file name that you would like to have for line delimited JSON file.
@@ -17,5 +17,5 @@ input file format -
  
 output file format - 
 
-{"id" : "1", "name" : "sanju"}<br\>
+{"id" : "1", "name" : "sanju"}
 {"id" : "2", "name" : "thomas"}
