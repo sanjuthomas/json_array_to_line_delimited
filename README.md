@@ -10,12 +10,17 @@ argument 1 - json array file
 argument 2 - the file name that you would like to have for line delimited JSON file.
 
 input file format - 
+
 [
+
   {"id" : "1", "name" : "sanju"}, 
+  
   {"id" : "2", "name" : "thomas"}
+  
 ]
  
 output file format - 
 
 {"id" : "1", "name" : "sanju"}
+
 {"id" : "2", "name" : "thomas"}
