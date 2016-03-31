@@ -17,5 +17,5 @@ input file format -
  
 output file format - 
 
-{"id" : "1", "name" : "sanju"}
+{"id" : "1", "name" : "sanju"}\n
 {"id" : "2", "name" : "thomas"}
