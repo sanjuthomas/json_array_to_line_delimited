@@ -34,10 +34,8 @@ public class JsonArrayToLineDelimited {
 			System.out.println("Usage org.sanju.util.JsonArrayToLineDelimited <<input file>> <<output file>>");
 			System.exit(0);
 		}
-		
-		BufferedWriter writer = null;
+		BufferedWriter writer = new BufferedWriter(new FileWriter(new File(args[1])));
 		try {
-			writer = new BufferedWriter(new FileWriter(new File(args[1])));
 			final JSONParser parser = new JSONParser();
 			final Object obj = parser.parse(new FileReader(args[0]));
 			final JSONArray jsonArrayObject = (JSONArray) obj;
@@ -47,8 +45,11 @@ public class JsonArrayToLineDelimited {
 				writer.write(json.toJSONString());
 				writer.write("\n");
 			} 
+			System.out.println("The output file is written to "+args[1]);
 		} finally {
-			writer.close();
+			if(null != writer){
+				writer.close();
+			}
 		}
 	}
 	
