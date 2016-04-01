@@ -29,9 +29,8 @@ import org.json.simple.parser.ParseException;
 public class JsonArrayToLineDelimited {
 
 	public static void main(final String[] args) throws FileNotFoundException, IOException, ParseException {
-		
 		if(args.length != 2){
-			System.out.println("Usage org.sanju.util.JsonArrayToLineDelimited <<input file>> <<output file>>");
+			System.out.println("Usage- org.sanju.util.JsonArrayToLineDelimited <<input file>> <<output file>>");
 			System.exit(0);
 		}
 		BufferedWriter writer = new BufferedWriter(new FileWriter(new File(args[1])));
@@ -52,5 +51,4 @@ public class JsonArrayToLineDelimited {
 			}
 		}
 	}
-	
 }
